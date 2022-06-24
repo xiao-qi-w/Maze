@@ -1,0 +1,7 @@
+<!-- css样式文件，可自定义控件的各种参数便于引用，此处给出一个按钮样式的例子 -->
+.button {
+    -fx-border-style: solid;
+    -fx-border-color: #0099ff;
+    -fx-border-width: 2;
+    -fx-border-radius: 10
+}

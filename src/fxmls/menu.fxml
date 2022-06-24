@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 迷宫主界面 -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+    <children>
+        <GridPane fx:id="grid" layoutX="20" layoutY="50"/>
+        <Button layoutX="467.0" layoutY="75.0" onAction="#onRestoreClick" prefHeight="36.0" prefWidth="95.0"
+                stylesheets="@../css/button.css" text="还  原"/>
+        <Button layoutX="467.0" layoutY="180.0" onAction="#onAllClick" prefHeight="36.0" prefWidth="95.0"
+                stylesheets="@../css/button.css" text="遍  历"/>
+        <Button layoutX="467.0" layoutY="285.0" onAction="#onSearchClick" prefHeight="36.0" prefWidth="95.0"
+                stylesheets="@../css/button.css" text="寻  路"/>
+        <Button layoutX="467.0" layoutY="390.0" onAction="#onBestClick" prefHeight="36.0" prefWidth="95.0"
+                stylesheets="@../css/button.css" text="寻  优"/>
+        <TextArea fx:id="stack_info" layoutX="586.0" layoutY="55.0" prefHeight="491.0" prefWidth="142.0"/>
+        <Label fx:id="explain" layoutX="741.0" layoutY="55.0" prefHeight="491.0" prefWidth="32.0"/>
+        <Label fx:id="in" layoutX="79.0" layoutY="505.0" prefHeight="34.0" prefWidth="134.0"/>
+        <Label fx:id="out" layoutX="266.0" layoutY="505.0" prefHeight="34.0" prefWidth="134.0"/>
+    </children>
+</AnchorPane>

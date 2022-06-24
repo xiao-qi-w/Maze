@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 手动输入界面 -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="rootStage" prefHeight="733.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InputController">
+    <children>
+        <Label fx:id="explain" alignment="CENTER" layoutX="50.0" layoutY="35.0" prefHeight="30" prefWidth="500"
+               text="请编辑迷宫地图，0表示墙体，非0表示道路" textAlignment="CENTER">
+            <font>
+                <Font name="BOLD" size="20"/>
+            </font>
+        </Label>
+        <Label fx:id="col" layoutX="50.0" layoutY="130.0" prefHeight="400" prefWidth="30"/>
+        <Label fx:id="row" layoutX="100.0" layoutY="90.0" prefHeight="30" prefWidth="400"/>
+        <TextArea fx:id="edit" layoutX="100.0" layoutY="130.0" prefHeight="400" prefWidth="400"/>
+        <Button fx:id="confirm" layoutX="150.0" layoutY="651.0" onAction="#onConfirmClick" prefHeight="50"
+                prefWidth="300" text="确认生成"/>
+        <Label alignment="CENTER" layoutX="100.0" layoutY="551.0" prefHeight="20.0" prefWidth="42.0" text="入口"/>
+        <TextField fx:id="ix" layoutX="178.0" layoutY="546.0" prefHeight="30.0" prefWidth="91.0" promptText="inX"/>
+        <TextField fx:id="iy" layoutX="328.0" layoutY="546.0" prefHeight="30.0" prefWidth="91.0" promptText="inY"/>
+        <Label alignment="CENTER" layoutX="100.0" layoutY="600.0" prefHeight="20.0" prefWidth="42.0" text="出口"/>
+        <TextField fx:id="ox" layoutX="178.0" layoutY="595.0" prefHeight="30.0" prefWidth="91.0" promptText="outX"/>
+        <TextField fx:id="oy" layoutX="328.0" layoutY="595.0" prefHeight="30.0" prefWidth="91.0" promptText="outY"/>
+    </children>
+</AnchorPane>
